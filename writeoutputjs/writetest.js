@@ -12,7 +12,7 @@ function repeat(item, times) {
 	for(let i = 0; i < times; i++) {
   	rslt.push(item)
   }
-  fs.writeFile('Output.txt', rslt, (err) => {
+  fs.writeFile('Output.txt', rslt + '.', (err) => {
     // In case of a error throw err. 
     if (err) throw err; 
 })
